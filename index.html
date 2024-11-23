@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Resume</title>
+    <title>Shareable Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
         });
     </script>
 
-    <h1> Editable Resume Builder</h1>
+    <h1> Shareable Resume Builder</h1>
     <form id="resume-form">
         <div > 
         <fieldset>
@@ -83,8 +83,14 @@
     </div>
     </form>
     <br> 
-    <!-- Dynamic Resume -->
+    <!-- Shareable Resume -->
     <div id="resume-display"> </div>
+<br/>
+     <!-- Selection for the link and download option -->
+     <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable link</h2>
+        <p>Here is your unique link to view or edit your resume</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
 
     <script src="script.js"></script>
 </body>
