@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"# HAKATHON-MILESTONE-5" 
-=======
 ## HAKATHON-MILESTONE-4
 
 **Editable Resume Generator ✨📝**
