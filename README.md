@@ -54,5 +54,5 @@ Then open the index.html file in your browser to view and interact with the appl
 
 **License 📜**
 
-This project is licensed under the **MIT License** - see the LICENSE file for details.
->>>>>>> 063736ab178416a798445685083a653dd7efc60f
+>> This project is licensed under the **MIT License** - see the LICENSE file for details.
+
