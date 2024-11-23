@@ -2,7 +2,6 @@ var form = document.getElementById('resume-form');
 var resumeDisplayElement = document.getElementById('resume-display');
 var editButton;
 var saveButton;
-var shareButton;
 
 // Handle form submission
 form.addEventListener('submit', function (event) {
@@ -59,7 +58,6 @@ function generateResume(name, email, phone, education, experience, skills, profi
 
         <button id="edit-resume">Edit</button>
         <button id="save-resume" style="display: none;">Save</button>
-        <button id="share-resume">Share Resume</button> <!-- Share Resume button -->
     `;
 
     // Display the resume
@@ -72,11 +70,9 @@ function generateResume(name, email, phone, education, experience, skills, profi
     // Show the "Edit" button and handle editing
     editButton = document.getElementById('edit-resume');
     saveButton = document.getElementById('save-resume');
-    shareButton = document.getElementById('share-resume'); // Add reference to share button
 
     editButton.style.display = 'block'; // Show "Edit" button
     saveButton.style.display = 'none'; // Hide "Save" button initially
-    shareButton.style.display = 'block'; // Show the "Share" button
 
     editButton.addEventListener('click', function () {
         // Make resume editable
@@ -94,26 +90,5 @@ function generateResume(name, email, phone, education, experience, skills, profi
         });
         editButton.style.display = 'block'; // Show "Edit" button again
         saveButton.style.display = 'none'; // Hide "Save" button after saving
-    });
-
-    // Share Resume functionality
-    shareButton.addEventListener('click', function () {
-        var resumeData = {
-            name: name,
-            email: email,
-            phone: phone,
-            education: education,
-            experience: experience,
-            skills: skills,
-            profilePicURL: profilePicURL
-        };
-
-        // Convert resumeData to JSON and encode it in the URL
-        var resumeDataURL = encodeURIComponent(JSON.stringify(resumeData));
-
-        // Share URL (for example, you can share it through social media or email)
-        var shareURL = window.location.href.split('?')[0] + '?resume=' + resumeDataURL;
-
-        alert('Share this link to view the resume: ' + shareURL);
     });
 }
