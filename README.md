@@ -48,7 +48,7 @@ bash
 
 **Copy code**
 
-git clone https://github.com/your-username/editable-resume.git
+git clone https://github.com/anashakeem123/HAKATHON-MILESTONE-4.git.
 
 Then open the index.html file in your browser to view and interact with the application. 👨‍💻
 
