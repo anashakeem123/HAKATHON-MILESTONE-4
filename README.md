@@ -1,4 +1,4 @@
-**HAKATHON-MILESTONE-4**
+## HAKATHON-MILESTONE-4
 
 **Editable Resume Generator ✨📝**
 
